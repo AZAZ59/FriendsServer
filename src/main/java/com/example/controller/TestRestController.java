@@ -16,7 +16,7 @@ public class TestRestController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/greeting")
-    public Data greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public Data greeting(@RequestParam(value = "data", defaultValue = "World") String name) {
         return new Data(counter.incrementAndGet(),String.format(template, name));
     }
 }
