@@ -7,11 +7,10 @@
       <schema-pattern>postgres.public postgres.test</schema-pattern>
       <default-schemas>postgres.pg_catalog postgres.public</default-schemas>
     </data-source>
-    <data-source name="PostgreSQL - da0jicn1itjt17?sslmode=require@ec2-54-227-254-152.compute-1.amazonaws.com" uuid="e268488f-e065-4d16-9f85-43f6f706feb0">
+    <data-source name="PostgreSQL - d1si3rdqdjo5nc?sslmode=require@ec2-54-197-224-155.compute-1.amazonaws.com" uuid="e268488f-e065-4d16-9f85-43f6f706feb0">
       <secret-storage>master_key</secret-storage>
-      <user-name>rvshaeslwoyukr</user-name>
-      <schema-pattern>da0jicn1itjt17.pg_catalog da0jicn1itjt17.public</schema-pattern>
-      <default-schemas>da0jicn1itjt17.pg_catalog da0jicn1itjt17.public</default-schemas>
+      <user-name>ykidigbulptour</user-name>
+      <schema-pattern>d1si3rdqdjo5nc.public</schema-pattern>
     </data-source>
   </component>
 </project>
