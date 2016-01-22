@@ -4,20 +4,19 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.UUID;
 
 @Entity
 public class Data implements DomainObject {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String description;
+    private String content;
 
-    public Data() {    }
+    public Data() {}
 
-    public Data(Long id, String description) {
+    public Data(Long id, String content) {
         this.id = id;
-        this.description = description;
+        this.content = content;
     }
 
     public Long getId() {
@@ -28,11 +27,11 @@ public class Data implements DomainObject {
         this.id = id;
     }
 
-    public String getDescription() {
-        return description;
+    public String getContent() {
+        return content;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setContent(String content) {
+        this.content = content;
     }
 }

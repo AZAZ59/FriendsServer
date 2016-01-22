@@ -5,12 +5,10 @@ import com.example.repository.DataRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.UUID;
 
 @Service("dataService")
 public class DataServiceImpl implements DataService {
@@ -38,13 +36,13 @@ public class DataServiceImpl implements DataService {
     @Override
     public Set<String> getRandomData() {
         HashSet<String> out = new HashSet<>();
-        dataRepository.findAll().forEach(data -> out.add(data.getDescription()));
+        dataRepository.findAll().forEach(data -> out.add(data.getContent()));
         return out;
     }
 
     @Override
     public String findByDescr(String description) {
-        LOG.info(description+" "+dataRepository.findByDescription(description).get(0).getDescription());
-        return dataRepository.findByDescription(description).get(0).getDescription();
+        LOG.info(description+" "+dataRepository.findByDescription(description).get(0).getContent());
+        return dataRepository.findByDescription(description).get(0).getContent();
     }
 }

@@ -1,8 +1,6 @@
 package com.example;
 
 import com.example.entity.Data;
-import com.example.repository.DataRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 
@@ -19,7 +17,7 @@ public class DataRepositoryImpl/* implements DataRepository<Data>*/ {
     ////@Override
     public void persist(Data object) {
 
-        Object[] params = new Object[] { object.getId(), object.getDescription() };
+        Object[] params = new Object[] { object.getId(), object.getContent() };
         int[] types = new int[] { Types.VARCHAR, Types.VARCHAR };
 
         jdbcOperations.update("INSERT INTO yourapp_data(\n" +
