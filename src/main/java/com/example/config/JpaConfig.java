@@ -53,7 +53,7 @@ public class JpaConfig implements TransactionManagementConfigurer {
         }
             String username = dbUri.getUserInfo().split(":")[0];
             String password = dbUri.getUserInfo().split(":")[1];
-            String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+            String url = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 
         LOG.info("url  =  "+url);
         LOG.info("username  =  "+username);
