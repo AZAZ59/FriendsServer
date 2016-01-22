@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b159f6f1-0249-4c93-8076-5e1a263a6d06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/config/JpaConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/example/config/JpaConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled2.iws" />
@@ -98,8 +96,8 @@
       <file leaf-file-name="JpaConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5984655">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.73657286">
+              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -792,7 +790,7 @@
       <workItem from="1452715894638" duration="4703000" />
       <workItem from="1453290017132" duration="895000" />
       <workItem from="1453459764270" duration="15558000" />
-      <workItem from="1453476874496" duration="2771000" />
+      <workItem from="1453476874496" duration="2922000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy">
       <created>1453475367004</created>
@@ -848,11 +846,17 @@
       <option name="project" value="LOCAL" />
       <updated>1453479456411</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Deploy">
+      <created>1453479654617</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1453479654617</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27250000" />
+    <option name="totallyTimeSpent" value="27401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1366,8 +1370,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5984655">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.73657286">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
