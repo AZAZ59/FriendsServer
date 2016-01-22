@@ -49,18 +49,10 @@ public class JpaConfig implements TransactionManagementConfigurer {
                 String username = dbUri.getUserInfo().split(":")[0];
                 String password = dbUri.getUserInfo().split(":")[1];
                 String url = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
-
-                LOG.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             }
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
-
-
-
-        LOG.info("url  =  "+url);
-        LOG.info("username  =  "+username);
-        LOG.info("password  =  "+password);
         config.setDriverClassName(driver);
         config.setJdbcUrl(url);
         config.setUsername(username);
