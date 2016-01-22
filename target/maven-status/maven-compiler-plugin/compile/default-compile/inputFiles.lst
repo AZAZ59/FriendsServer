@@ -1,0 +1,12 @@
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/entity/Data.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/service/DataServiceImpl.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/repository/DataRepository.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/DataRepositoryImpl.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/controller/DataController.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/entity/DomainObject.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/Application.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/utils/Ajax.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/service/DataService.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/controller/ExceptionHandlerController.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/config/JpaConfig.java
+/home/azaz/IdeaProjects/untitled2/src/main/java/com/example/utils/RestException.java
