@@ -43,9 +43,7 @@ public class JpaConfig implements TransactionManagementConfigurer {
     public DataSource configureDataSource() {
         HikariConfig config = new HikariConfig();
         LOG.info("enter");
-        LOG.info(System.getenv("-DATABASE_URL"));
-        LOG.info("URL_2  ==  "+System.getProperty("-DATABASE_URL"));
-        LOG.info(String.valueOf(System.getProperties()));
+        LOG.info("URL___==="+System.getenv("DATABASE_URL"));
         LOG.info("________________");
         LOG.info(String.valueOf(System.getenv()));
 /*
