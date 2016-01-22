@@ -42,15 +42,7 @@ public class JpaConfig implements TransactionManagementConfigurer {
     @Bean
     public DataSource configureDataSource() {
         HikariConfig config = new HikariConfig();
-        LOG.info("enter");
-        LOG.info("URL___==="+System.getenv(" DATABASE_URL"));
-        LOG.info("________________");
-        LOG.info(String.valueOf(System.getenv()));
-/*
-        for(int i=1; i>0;){
-            ;
-        }*/
-            URI dbUri = null;
+        URI dbUri = null;
         if (System.getenv("DATABASE_URL") != null) {
             try {
                 dbUri = new URI(System.getenv("DATABASE_URL"));
@@ -59,18 +51,13 @@ public class JpaConfig implements TransactionManagementConfigurer {
                 e.printStackTrace();
             }
         }
-        try {
-            dbUri= new URI("postgres://ykidigbulptour:8_hjm12XoK0E8oJlfyzmihz5_j@ec2-54-197-224-155.compute-1.amazonaws.com:5432/d1si3rdqdjo5nc");
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
             String username = dbUri.getUserInfo().split(":")[0];
             String password = dbUri.getUserInfo().split(":")[1];
             String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 
-
-
         LOG.info("url  =  "+url);
+        LOG.info("username  =  "+username);
+        LOG.info("password  =  "+password);
         config.setDriverClassName(driver);
         config.setJdbcUrl(url);
         config.setUsername(username);
