@@ -11,6 +11,6 @@ import java.util.UUID;
 
 public interface DataRepository extends CrudRepository<Data,Long> {
 
-    List<Data> findByDescription(String description);
+    List<Data> findByContent(String description);
 
 }

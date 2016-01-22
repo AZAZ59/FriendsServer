@@ -42,7 +42,7 @@ public class DataServiceImpl implements DataService {
 
     @Override
     public String findByDescr(String description) {
-        LOG.info(description+" "+dataRepository.findByDescription(description).get(0).getContent());
-        return dataRepository.findByDescription(description).get(0).getContent();
+        LOG.info(description+" "+dataRepository.findByContent(description).get(0).getContent());
+        return dataRepository.findByContent(description).get(0).getContent();
     }
 }
