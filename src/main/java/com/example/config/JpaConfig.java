@@ -3,6 +3,8 @@ package com.example.config;
 import com.example.Application;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,14 +38,15 @@ public class JpaConfig implements TransactionManagementConfigurer {
     private String dialect;
     @Value("${hibernate.hbm2ddl.auto}")
     private String hbm2ddlAuto;
-
+    private static final Logger LOG = LoggerFactory.getLogger(JpaConfig.class);
     @Bean
     public DataSource configureDataSource() {
         HikariConfig config = new HikariConfig();
-
+        LOG.info("enter");
 
         if (System.getenv("DATABASE_URL") != null) {
             URI dbUri = null;
+            LOG.info("DATABASE_URL"+" ==  "+System.getenv("DATABASE_URL"));
             try {
                 dbUri = new URI(System.getenv("DATABASE_URL"));
                 username = dbUri.getUserInfo().split(":")[0];
@@ -54,6 +57,7 @@ public class JpaConfig implements TransactionManagementConfigurer {
             }
         }
 
+        LOG.info("url  =  "+url);
         config.setDriverClassName(driver);
         config.setJdbcUrl(url);
         config.setUsername(username);
