@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b159f6f1-0249-4c93-8076-5e1a263a6d06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled2.iws" />
@@ -96,8 +95,8 @@
       <file leaf-file-name="JpaConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67774934">
-              <caret line="56" column="108" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="108" />
+            <state vertical-scroll-proportion="0.2173913">
+              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -779,7 +778,7 @@
       <workItem from="1452715894638" duration="4703000" />
       <workItem from="1453290017132" duration="895000" />
       <workItem from="1453459764270" duration="15558000" />
-      <workItem from="1453476874496" duration="1524000" />
+      <workItem from="1453476874496" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy">
       <created>1453475367004</created>
@@ -817,11 +816,17 @@
       <option name="project" value="LOCAL" />
       <updated>1453478133181</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Deploy">
+      <created>1453478470088</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1453478470088</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26003000" />
+    <option name="totallyTimeSpent" value="26192000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1309,6 +1314,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41432226">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1325,18 +1338,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41432226">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67774934">
-          <caret line="56" column="108" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.2173913">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
