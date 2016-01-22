@@ -15,6 +15,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
 import javax.sql.DataSource;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Properties;
 
 @Configuration
@@ -38,6 +40,20 @@ public class JpaConfig implements TransactionManagementConfigurer {
     @Bean
     public DataSource configureDataSource() {
         HikariConfig config = new HikariConfig();
+
+
+        if (System.getenv("DATABASE_URL") != null) {
+            URI dbUri = null;
+            try {
+                dbUri = new URI(System.getenv("DATABASE_URL"));
+                username = dbUri.getUserInfo().split(":")[0];
+                password = dbUri.getUserInfo().split(":")[1];
+                url = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        }
+
         config.setDriverClassName(driver);
         config.setJdbcUrl(url);
         config.setUsername(username);
