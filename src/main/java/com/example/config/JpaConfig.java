@@ -43,17 +43,20 @@ public class JpaConfig implements TransactionManagementConfigurer {
     public DataSource configureDataSource() {
         HikariConfig config = new HikariConfig();
         URI dbUri = null;
-        if (System.getenv("DATABASE_URL") != null) {
-            try {
+        try {
+            if (System.getenv("DATABASE_URL") != null) {
                 dbUri = new URI(System.getenv("DATABASE_URL"));
+                String username = dbUri.getUserInfo().split(":")[0];
+                String password = dbUri.getUserInfo().split(":")[1];
+                String url = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+
                 LOG.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            }
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
-        }
-            String username = dbUri.getUserInfo().split(":")[0];
-            String password = dbUri.getUserInfo().split(":")[1];
-            String url = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+
+
 
         LOG.info("url  =  "+url);
         LOG.info("username  =  "+username);
