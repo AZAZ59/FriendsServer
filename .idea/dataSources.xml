@@ -6,14 +6,12 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
-      <libraries />
     </data-source>
     <data-source source="LOCAL" name="PostgreSQL - d1si3rdqdjo5nc?sslmode=require@ec2-54-197-224-155.compute-1.amazonaws.com" uuid="e268488f-e065-4d16-9f85-43f6f706feb0">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-54-197-224-155.compute-1.amazonaws.com:5432/d1si3rdqdjo5nc?sslmode=require</jdbc-url>
-      <libraries />
     </data-source>
   </component>
 </project>
