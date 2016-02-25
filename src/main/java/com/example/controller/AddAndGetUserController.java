@@ -40,8 +40,8 @@ public class AddAndGetUserController {
         } else if (email.isEmpty() && vk_id != -1) {
             //hasn`t email and has id
             UserData dat = dataService.findByVk_id(vk_id);
-            dat.setMessage("Loaded_VK");
             if (dat != null) {
+                dat.setMessage("Loaded_VK");
                 return dat;
             } else {
                 dataService.persist(data);
@@ -50,15 +50,15 @@ public class AddAndGetUserController {
         } else {
             //has both val
             UserData u1= dataService.findByEmail(email);
-            UserData u2 = dataService.findByVk_id(vk_id);
+            /*UserData u2 = dataService.findByVk_id(vk_id);
 
             data.setEmail(u1.getEmail());
             data.setVkId(u2.getVkId());
 
             dataService.delete(u1);
             dataService.delete(u2);
-            dataService.persist(data);
-            return data;//
+            dataService.persist(data);*/
+            return u1;//
         }
         //return new Data(counter.incrementAndGet(),String.format(template, name));
     }
