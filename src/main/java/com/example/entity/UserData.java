@@ -14,6 +14,16 @@ public class UserData implements DomainObject {
     @Id
     private String id;
 
+    @Override
+    public String toString() {
+        return "UserData{" +
+                "id='" + id + '\'' +
+                ", vkId=" + vkId +
+                ", email='" + email + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
+
     private Long vkId;
     private String email;
     private String message;

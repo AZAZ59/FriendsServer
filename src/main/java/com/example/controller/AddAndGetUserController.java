@@ -23,43 +23,25 @@ public class AddAndGetUserController {
             @RequestParam(value = "email", defaultValue = "") String email,
             @RequestParam(value = "vk_id", defaultValue = "") Long vk_id
     ) {
-        LOG.info("email |"+email+"| id "+vk_id);
+        LOG.info("email |" + email + "| id " + vk_id);
         UserData data = new UserData(vk_id, email);
-        data.setMessage("saved");
-        if (!email.isEmpty() && vk_id != null) {
-            //has email  and has not id
-            UserData dat = dataService.findByEmail(email);
-            if (dat != null) {
-                dat.setMessage("Loaded_email");
-                return dat;
-            } else {
-                dataService.persist(data);
-                return data;
-            }
+        UserData fromEmail = dataService.findByEmail(email);
+        UserData fromVK = dataService.findByVk_id(vk_id);
+        LOG.info(fromEmail);
+        LOG.info(fromVK);
 
-        } else if (email.isEmpty() && vk_id == null) {
-            //hasn`t email and has id
-            UserData dat = dataService.findByVk_id(vk_id);
-            if (dat != null) {
-                dat.setMessage("Loaded_VK");
-                return dat;
-            } else {
-                dataService.persist(data);
-                return data;
-            }
+        if (fromEmail == null && fromVK == null) {
+            dataService.persist(data);
+            return data;
         } else {
-            //has both val
-            UserData u1= dataService.findByEmail(email);
-            /*UserData u2 = dataService.findByVk_id(vk_id);
-
-            data.setEmail(u1.getEmail());
-            data.setVkId(u2.getVkId());
-
-            dataService.delete(u1);
-            dataService.delete(u2);
-            dataService.persist(data);*/
-            return u1;//
+            if (fromEmail != null) {
+                return fromEmail;
+            }
+            else{
+                return fromVK;
+            }
         }
-        //return new Data(counter.incrementAndGet(),String.format(template, name));
     }
 }
+//return new Data(counter.incrementAndGet(),String.format(template, name));
+
