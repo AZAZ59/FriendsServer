@@ -24,6 +24,7 @@ public class AddAndGetUserController {
             @RequestParam(value = "vk_id", defaultValue = "-1") Long vk_id
     ) {
         UserData data = new UserData(vk_id, email);
+        LOG.trace("email |"+email+"| id "+vk_id);
         if (!email.isEmpty() && vk_id == -1) {
             //has email  and has not id
             UserData dat = dataService.findByEmail(email);

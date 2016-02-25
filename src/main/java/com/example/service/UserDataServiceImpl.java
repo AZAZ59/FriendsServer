@@ -31,15 +31,22 @@ public class UserDataServiceImpl implements UserDataService {
     }
 
 
-
     @Override
     public UserData findByVk_id(Long Vk_id) {
-        return dataRepository.findByVkId(Vk_id).get(0);
+        try {
+            return dataRepository.findByVkId(Vk_id).get(0);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override
     public UserData findByEmail(String Email) {
-        return dataRepository.findByEmail(Email).get(0);
+        try {
+            return dataRepository.findByEmail(Email).get(0);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override
