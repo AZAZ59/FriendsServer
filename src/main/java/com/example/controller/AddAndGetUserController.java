@@ -49,7 +49,7 @@ public class AddAndGetUserController {
             UserData u2 = dataService.findByVk_id(vk_id);
 
             data.setEmail(u1.getEmail());
-            data.setVk_id(u2.getVk_id());
+            data.setVkId(u2.getVkId());
 
             dataService.delete(u1);
             dataService.delete(u2);

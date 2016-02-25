@@ -19,15 +19,17 @@ public class UserData implements DomainObject {
         UserData userData = (UserData) o;
 
         if (!getId().equals(userData.getId())) return false;
-        if (getVk_id() != null ? !getVk_id().equals(userData.getVk_id()) : userData.getVk_id() != null) return false;
+        if (getVkId() != null ? !getVkId().equals(userData.getVkId()) : userData.getVkId() != null) return false;
         return getEmail() != null ? getEmail().equals(userData.getEmail()) : userData.getEmail() == null;
 
     }
 
+    public UserData() {}
+
     @Override
     public int hashCode() {
         int result = getId().hashCode();
-        result = 31 * result + (getVk_id() != null ? getVk_id().hashCode() : 0);
+        result = 31 * result + (getVkId() != null ? getVkId().hashCode() : 0);
         result = 31 * result + (getEmail() != null ? getEmail().hashCode() : 0);
         return result;
     }
@@ -37,19 +39,19 @@ public class UserData implements DomainObject {
     //private Long id;
     private UUID id;
 
-    private Long vk_id;
+    private Long vkId;
     private String email;
 
-    public UserData(Long vk_id) {
-        this.vk_id = vk_id; this.id=UUID.randomUUID();
+    public UserData(Long vkId) {
+        this.vkId = vkId; this.id=UUID.randomUUID();
     }
 
     public UserData(String email) {
         this.email = email;this.id=UUID.randomUUID();
     }
 
-    public UserData(Long vk_id, String email) {
-        this.vk_id = vk_id;
+    public UserData(Long vkId, String email) {
+        this.vkId = vkId;
         this.email = email;
         this.id=UUID.randomUUID();
     }
@@ -62,12 +64,12 @@ public class UserData implements DomainObject {
         this.id = id;
     }
 
-    public Long getVk_id() {
-        return vk_id;
+    public Long getVkId() {
+        return vkId;
     }
 
-    public void setVk_id(Long vk_id) {
-        this.vk_id = vk_id;
+    public void setVkId(Long vkId) {
+        this.vkId = vkId;
     }
 
     public String getEmail() {
