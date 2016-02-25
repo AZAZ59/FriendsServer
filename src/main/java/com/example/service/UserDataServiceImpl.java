@@ -1,17 +1,11 @@
 package com.example.service;
 
-import com.example.entity.Data;
 import com.example.entity.UserData;
-import com.example.repository.DataRepository;
 import com.example.repository.UserDataRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
 
 @Service("UserDataService")
 public class UserDataServiceImpl implements UserDataService {
