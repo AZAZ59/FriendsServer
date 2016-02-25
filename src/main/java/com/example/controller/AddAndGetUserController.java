@@ -40,11 +40,16 @@ public class AddAndGetUserController {
             dataService.persist(data);
             return data;
         } else {
-            if (fromEmail != null) {
+            if (fromEmail != null&&fromVK==null) {
                 return fromEmail;
             }
-            else{
+            else if (fromEmail == null&&fromVK!=null) {
                 return fromVK;
+            }else {
+                fromEmail.setId(fromVK.getId());
+                dataService.persist(fromEmail);
+                dataService.delete(fromVK);
+                return fromEmail;
             }
         }
     }
