@@ -25,8 +25,14 @@ public class AddAndGetUserController {
     ) {
         LOG.info("email |" + email + "| id " + vk_id);
         UserData data = new UserData(vk_id, email);
-        UserData fromEmail = dataService.findByEmail(email);
-        UserData fromVK = dataService.findByVk_id(vk_id);
+        UserData fromEmail = null;
+        UserData fromVK = null;
+        if (email != null) {
+            fromEmail = dataService.findByEmail(email);
+        }
+        if (vk_id != null) {
+            fromVK = dataService.findByVk_id(vk_id);
+        }
         LOG.info(fromEmail);
         LOG.info(fromVK);
 
