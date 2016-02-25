@@ -55,8 +55,8 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>14117211</introspection-state-number>
-        <introspection-timestamp>2016-02-25.21:58:58.535</introspection-timestamp>
+        <introspection-state-number>1986529</introspection-state-number>
+        <introspection-timestamp>2016-02-25.22:21:46.241</introspection-timestamp>
       </schema>
       <sequence id="3" parent="2" name="hibernate_sequence">
         <object-id>1413413</object-id>
@@ -66,64 +66,28 @@
         <object-id>1413408</object-id>
         <state-number>1986529</state-number>
       </table>
-      <table id="5" parent="2" name="userdata">
-        <object-id>9906396</object-id>
-        <state-number>14117211</state-number>
-      </table>
-      <column id="6" parent="4" name="id">
+      <column id="5" parent="4" name="id">
         <state-number>1921992</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
-      <column id="7" parent="4" name="description">
+      <column id="6" parent="4" name="description">
         <state-number>1921992</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="8" parent="4" name="content">
+      <column id="7" parent="4" name="content">
         <state-number>1986529</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <index id="9" parent="4" name="data_pkey">
+      <index id="8" parent="4" name="data_pkey">
         <object-id>1413411</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="10" parent="4" name="data_pkey">
+      <key id="9" parent="4" name="data_pkey">
         <columns>id</columns>
         <underlying-index>data_pkey</underlying-index>
-        <primary>1</primary>
-      </key>
-      <column id="11" parent="5" name="id">
-        <state-number>14110449</state-number>
-        <mandatory>1</mandatory>
-        <data-type>bytea</data-type>
-      </column>
-      <column id="12" parent="5" name="email">
-        <state-number>14110449</state-number>
-        <data-type>varchar(255)</data-type>
-      </column>
-      <column id="13" parent="5" name="vk_id">
-        <state-number>14110449</state-number>
-        <data-type>bigint</data-type>
-      </column>
-      <column id="14" parent="5" name="vkid">
-        <state-number>14112182</state-number>
-        <data-type>bigint</data-type>
-      </column>
-      <column id="15" parent="5" name="message">
-        <state-number>14117211</state-number>
-        <data-type>varchar(255)</data-type>
-      </column>
-      <index id="16" parent="5" name="userdata_pkey">
-        <object-id>9906402</object-id>
-        <columns>id</columns>
-        <desc-columns></desc-columns>
-        <unique>1</unique>
-      </index>
-      <key id="17" parent="5" name="userdata_pkey">
-        <columns>id</columns>
-        <underlying-index>userdata_pkey</underlying-index>
         <primary>1</primary>
       </key>
     </database-model>
