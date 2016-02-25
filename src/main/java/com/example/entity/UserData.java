@@ -24,7 +24,9 @@ public class UserData implements DomainObject {
 
     }
 
-    public UserData() {}
+    public UserData() {
+        this.id=UUID.randomUUID().toString();
+    }
 
     @Override
     public int hashCode() {
@@ -35,32 +37,32 @@ public class UserData implements DomainObject {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    //private Long id;
-    private UUID id;
+    private String id;
 
     private Long vkId;
     private String email;
 
     public UserData(Long vkId) {
-        this.vkId = vkId; this.id=UUID.randomUUID();
+        this();
+        this.vkId = vkId;
     }
 
     public UserData(String email) {
-        this.email = email;this.id=UUID.randomUUID();
+        this();
+        this.email = email;
     }
 
     public UserData(Long vkId, String email) {
+        this();
         this.vkId = vkId;
         this.email = email;
-        this.id=UUID.randomUUID();
     }
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(String id) {
         this.id = id;
     }
 
