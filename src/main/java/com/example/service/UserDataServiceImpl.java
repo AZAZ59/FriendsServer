@@ -13,7 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
-@Service("dataService")
+@Service("UserDataService")
 public class UserDataServiceImpl implements UserDataService {
 
     private static final Logger LOG = LoggerFactory.getLogger(UserDataServiceImpl.class);
