@@ -20,27 +20,24 @@ public class AddAndGetUserController {
 
     @RequestMapping("/login")
     public UserData login(
-            @RequestParam(value = "email", defaultValue = "___") String email,
-            @RequestParam(value = "vk_id", defaultValue = "-1") Long vk_id
+            @RequestParam(value = "email", defaultValue = "") String email,
+            @RequestParam(value = "vk_id", defaultValue = "") Long vk_id
     ) {
         LOG.info("email |"+email+"| id "+vk_id);
         UserData data = new UserData(vk_id, email);
         data.setMessage("saved");
-        if (!email.isEmpty() && vk_id == -1) {
+        if (!email.isEmpty() && vk_id != null) {
             //has email  and has not id
-            LOG.info("has email  and has not id");
             UserData dat = dataService.findByEmail(email);
             if (dat != null) {
-                LOG.info("dat!=null");
                 dat.setMessage("Loaded_email");
                 return dat;
             } else {
-                LOG.info("dat==null");
                 dataService.persist(data);
                 return data;
             }
 
-        } else if (email.isEmpty() && vk_id != -1) {
+        } else if (email.isEmpty() && vk_id == null) {
             //hasn`t email and has id
             UserData dat = dataService.findByVk_id(vk_id);
             if (dat != null) {
