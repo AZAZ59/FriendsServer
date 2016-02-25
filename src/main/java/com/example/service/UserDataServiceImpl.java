@@ -34,7 +34,7 @@ public class UserDataServiceImpl implements UserDataService {
 
     @Override
     public UserData findByVk_id(Long Vk_id) {
-        return dataRepository.findByVk_id(Vk_id).get(0);
+        return dataRepository.findByVkId(Vk_id).get(0);
     }
 
     @Override
