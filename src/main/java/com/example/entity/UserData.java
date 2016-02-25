@@ -11,6 +11,21 @@ import java.util.UUID;
  */
 @Entity
 public class UserData implements DomainObject {
+    @Id
+    private String id;
+
+    private Long vkId;
+    private String email;
+    private String message;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -36,11 +51,6 @@ public class UserData implements DomainObject {
         return result;
     }
 
-    @Id
-    private String id;
-
-    private Long vkId;
-    private String email;
 
     public UserData(Long vkId) {
         this();

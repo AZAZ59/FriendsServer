@@ -25,10 +25,12 @@ public class AddAndGetUserController {
     ) {
         LOG.info("email |"+email+"| id "+vk_id);
         UserData data = new UserData(vk_id, email);
+        data.setMessage("saved");
         if (!email.isEmpty() && vk_id == -1) {
             //has email  and has not id
             UserData dat = dataService.findByEmail(email);
             if (dat != null) {
+                dat.setMessage("Loaded_email");
                 return dat;
             } else {
                 dataService.persist(data);
@@ -38,6 +40,7 @@ public class AddAndGetUserController {
         } else if (email.isEmpty() && vk_id != -1) {
             //hasn`t email and has id
             UserData dat = dataService.findByVk_id(vk_id);
+            dat.setMessage("Loaded_VK");
             if (dat != null) {
                 return dat;
             } else {
