@@ -25,7 +25,7 @@ public class AddAndGetUserController {
             @RequestParam(value = "email", defaultValue = "") String email,
             @RequestParam(value = "vk_id", defaultValue = "") Long vk_id
     ) {
-        if(email.isEmpty()) email=null;
+        if (email.isEmpty()) email = null;
         LOG.info("email |" + email + "| id " + vk_id);
         UserData data = new UserData(vk_id, email);
         UserData fromEmail = null;
@@ -48,41 +48,21 @@ public class AddAndGetUserController {
             } else /*if (fromEmail == null&&fromVK!=null)*/ {
                 return fromVK;
             }
-            /*if(email!=null&&vk_id!=null){
-                if (fromEmail != null && fromVK == null) {
-                    fromEmail.setVkId(vk_id);
-                    dataService.persist(fromEmail);
-                    return fromEmail;
-                } else if (fromEmail == null&&fromVK!=null) {
-                    fromVK.setEmail(email);
-                    dataService.persist(fromVK);
-                    return fromVK;
-                } else {
-
-                }
-            }else {*/
-
-            /*}else {
-                fromEmail.setId(fromVK.getId());
-                dataService.persist(fromEmail);
-                dataService.delete(fromVK);
-                return fromEmail;
-            }*/
         }
     }
 
     @RequestMapping("/setScore")
     public void setScore(
-            @RequestParam(value="userData")UserData userData,
-            @RequestParam(value="userData")long score
-    ){
+            @RequestParam(value = "userData") UserData userData,
+            @RequestParam(value = "userData") long score
+    ) {
         UserData data = dataService.findById(userData.getId());
         data.setScore(score);
         dataService.persist(data);
     }
 
     @RequestMapping("/all")
-    public ArrayList<UserData> getAll(){
+    public ArrayList<UserData> getAll() {
         return dataService.getAll();
     }
 
