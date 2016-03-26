@@ -1,9 +1,8 @@
 package com.example.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.UUID;
 
 /**
@@ -24,10 +23,21 @@ public class UserData implements DomainObject {
                 '}';
     }
 
+    @ManyToOne
+    PlayerRoom room;
+
     private Long vkId;
     private String email;
     private String message;
     long score;
+
+    public PlayerRoom getRoom() {
+        return room;
+    }
+
+    public void setRoom(PlayerRoom room) {
+        this.room = room;
+    }
 
     public String getMessage() {
         return message;

@@ -1,10 +1,9 @@
 package com.example.entity;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.UUID;
 import java.util.ArrayList;
 
 /**
@@ -14,30 +13,32 @@ import java.util.ArrayList;
 
 public class PlayerRoom {
     @Id
-    Long id;
+    String id;
 
     @OneToMany
-    ArrayList<UserData> users;
+    List<UserData> users;
 
-    @OneToOne
+    //@OneToOne
     UserData creator;
 
 
+    public PlayerRoom() {
+        this.id=UUID.randomUUID().toString();
+    }
 
-
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ArrayList<UserData> getUsers() {
+    public List<UserData> getUsers() {
         return users;
     }
 
-    public void setUsers(ArrayList<UserData> users) {
+    public void setUsers(List<UserData> users) {
         this.users = users;
     }
 
