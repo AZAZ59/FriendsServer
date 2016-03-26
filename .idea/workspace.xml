@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b159f6f1-0249-4c93-8076-5e1a263a6d06" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/Application.class" afterPath="$PROJECT_DIR$/target/classes/com/example/Application.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/config/JpaConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/example/config/JpaConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/UserData.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/UserData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java" />
     </list>
     <ignored path="untitled2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRestController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestRestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/TestRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5284974">
+            <state vertical-scroll-proportion="0.0">
               <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding />
             </state>
@@ -135,17 +136,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDataServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserDataServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.1761658">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="method#persist#0;class#UserDataServiceImpl#0" expanded="false" />
                 <element signature="method#findByVk_id#0;class#UserDataServiceImpl#0" expanded="false" />
                 <element signature="method#findByEmail#0;class#UserDataServiceImpl#0" expanded="false" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1485#1486#0" expanded="true" />
                 <element signature="method#getAll#0;class#UserDataServiceImpl#0" expanded="false" />
               </folding>
             </state>
@@ -219,10 +220,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/controller/DataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/repository/UserDataRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/service/UserDataService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/entity/UserData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1334,13 +1335,7 @@
       <workItem from="1456419950610" duration="3326000" />
       <workItem from="1456423318108" duration="748000" />
       <workItem from="1456424220242" duration="2599000" />
-      <workItem from="1459013390605" duration="4074000" />
-    </task>
-    <task id="LOCAL-00005" summary="Deploy">
-      <created>1453477251083</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1453477251083</updated>
+      <workItem from="1459013390605" duration="4182000" />
     </task>
     <task id="LOCAL-00006" summary="Deploy">
       <created>1453478133181</created>
@@ -1630,11 +1625,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459015069484</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Deploy">
+      <created>1459017507147</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1459017507147</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51342000" />
+    <option name="totallyTimeSpent" value="51450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2008,21 +2009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
-          <folding>
-            <element signature="method#persist#0;class#UserDataServiceImpl#0" expanded="false" />
-            <element signature="method#findByVk_id#0;class#UserDataServiceImpl#0" expanded="false" />
-            <element signature="method#findByEmail#0;class#UserDataServiceImpl#0" expanded="false" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="method#getAll#0;class#UserDataServiceImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2117,9 +2103,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/TestRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5284974">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1761658">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="method#persist#0;class#UserDataServiceImpl#0" expanded="false" />
+            <element signature="method#findByVk_id#0;class#UserDataServiceImpl#0" expanded="false" />
+            <element signature="method#findByEmail#0;class#UserDataServiceImpl#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="method#getAll#0;class#UserDataServiceImpl#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
