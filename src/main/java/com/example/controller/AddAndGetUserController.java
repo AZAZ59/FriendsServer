@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+
 /**
  * Created by azaz on 22/01/16.
  */
 @RestController
 public class AddAndGetUserController {
-    private static final Logger LOG = Logger.getLogger(DataController.class);
+    private static final Logger LOG = Logger.getLogger(AddAndGetUserController.class);
 
     @Autowired
     private UserDataService dataService;
@@ -68,6 +70,22 @@ public class AddAndGetUserController {
             }*/
         }
     }
+
+    @RequestMapping("/setScore")
+    public void setScore(
+            @RequestParam(value="userData")UserData userData,
+            @RequestParam(value="userData")long score
+    ){
+        UserData data = dataService.findById(userData.getId());
+        data.setScore(score);
+        dataService.persist(data);
+    }
+
+    @RequestMapping("/all")
+    public ArrayList<UserData> getAll(){
+        return dataService.getAll();
+    }
+
 }
 //return new Data(counter.incrementAndGet(),String.format(template, name));
 
