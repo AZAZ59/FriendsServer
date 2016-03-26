@@ -104,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.44041452">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="22" />
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -1368,13 +1368,7 @@
       <workItem from="1456419950610" duration="3326000" />
       <workItem from="1456423318108" duration="748000" />
       <workItem from="1456424220242" duration="2599000" />
-      <workItem from="1459013390605" duration="4500000" />
-    </task>
-    <task id="LOCAL-00008" summary="Deploy">
-      <created>1453478632459</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1453478632459</updated>
+      <workItem from="1459013390605" duration="4536000" />
     </task>
     <task id="LOCAL-00009" summary="Deploy">
       <created>1453479456411</created>
@@ -1664,11 +1658,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459017771380</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Deploy">
+      <created>1459017910253</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1459017910253</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51768000" />
+    <option name="totallyTimeSpent" value="51804000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2152,7 +2152,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44041452">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="22" />
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
         </state>
       </provider>
