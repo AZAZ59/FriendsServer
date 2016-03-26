@@ -22,7 +22,5 @@ public class Application {
 		//SpringApplication.run(new Class<?>[] {Application.class, JpaConfig.class}, args);
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class);
 		DataRepository repository = context.getBean(DataRepository.class);
-
-
 	}
 }

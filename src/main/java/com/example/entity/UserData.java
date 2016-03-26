@@ -27,6 +27,7 @@ public class UserData implements DomainObject {
     private Long vkId;
     private String email;
     private String message;
+    long score;
 
     public String getMessage() {
         return message;
@@ -61,6 +62,13 @@ public class UserData implements DomainObject {
         return result;
     }
 
+    public long getScore() {
+        return score;
+    }
+
+    public void setScore(long score) {
+        this.score = score;
+    }
 
     public UserData(Long vkId) {
         this();
