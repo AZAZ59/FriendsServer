@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b159f6f1-0249-4c93-8076-5e1a263a6d06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/Application.class" afterPath="$PROJECT_DIR$/target/classes/com/example/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/config/JpaConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/example/config/JpaConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java" />
     </list>
     <ignored path="untitled2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,6 +30,16 @@
       <PATH_ELEMENT>
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PostgreSQL - d1si3rdqdjo5nc?sslmode=require@ec2-54-197-224-155.compute-1.amazonaws.com" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
   </component>
@@ -1335,13 +1342,7 @@
       <workItem from="1456419950610" duration="3326000" />
       <workItem from="1456423318108" duration="748000" />
       <workItem from="1456424220242" duration="2599000" />
-      <workItem from="1459013390605" duration="4182000" />
-    </task>
-    <task id="LOCAL-00006" summary="Deploy">
-      <created>1453478133181</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1453478133181</updated>
+      <workItem from="1459013390605" duration="4372000" />
     </task>
     <task id="LOCAL-00007" summary="Deploy">
       <created>1453478470088</created>
@@ -1631,11 +1632,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459017507147</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Deploy">
+      <created>1459017582822</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1459017582822</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51450000" />
+    <option name="totallyTimeSpent" value="51640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1648,7 +1655,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
