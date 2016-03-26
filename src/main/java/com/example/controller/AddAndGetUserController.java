@@ -53,10 +53,10 @@ public class AddAndGetUserController {
 
     @RequestMapping("/setScore")
     public void setScore(
-            @RequestParam(value = "userData") UserData userData,
-            @RequestParam(value = "userData") long score
+            @RequestParam(value = "Id") String Id,
+            @RequestParam(value = "score") long score
     ) {
-        UserData data = dataService.findById(userData.getId());
+        UserData data = dataService.findById(Id);
         data.setScore(score);
         dataService.persist(data);
     }

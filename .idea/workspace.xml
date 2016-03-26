@@ -4,7 +4,6 @@
     <list default="true" id="b159f6f1-0249-4c93-8076-5e1a263a6d06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="untitled2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,16 +74,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddAndGetUserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddAndGetUserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.68857145">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding>
                 <element signature="docComment;class#AddAndGetUserController#0" expanded="false" />
-                <element signature="method#setScore#0;class#AddAndGetUserController#0" expanded="false" />
-                <element signature="e#2077#2078#0" expanded="true" />
-                <element signature="e#2120#2121#0" expanded="true" />
+                <element signature="method#login#0;class#AddAndGetUserController#0" expanded="false" />
+                <element signature="e#2046#2047#0" expanded="true" />
+                <element signature="e#2089#2090#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44041452">
+            <state vertical-scroll-proportion="0.0">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
@@ -255,8 +254,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/entity/UserData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/service/UserDataServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" />
       </list>
     </option>
   </component>
@@ -682,7 +681,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
   </component>
-  <component name="RunManager" selected="Heroku Deployment.Heroku Deployment">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -1368,13 +1367,7 @@
       <workItem from="1456419950610" duration="3326000" />
       <workItem from="1456423318108" duration="748000" />
       <workItem from="1456424220242" duration="2599000" />
-      <workItem from="1459013390605" duration="4536000" />
-    </task>
-    <task id="LOCAL-00009" summary="Deploy">
-      <created>1453479456411</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1453479456411</updated>
+      <workItem from="1459013390605" duration="4896000" />
     </task>
     <task id="LOCAL-00010" summary="Deploy">
       <created>1453479654617</created>
@@ -1664,11 +1657,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459017910253</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Deploy">
+      <created>1459017947122</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1459017947122</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51804000" />
+    <option name="totallyTimeSpent" value="52164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1685,11 +1684,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32352942" sideWeight="0.49695587" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32352942" sideWeight="0.49695587" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38235295" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="100" y="60" width="1166" height="578" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38235295" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38235295" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22390318" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39379084" sideWeight="0.4939117" order="3" side_tool="false" content_ui="tabs" />
@@ -1802,9 +1801,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#AddAndGetUserController#0" expanded="false" />
-            <element signature="method#setScore#0;class#AddAndGetUserController#0" expanded="false" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="method#login#0;class#AddAndGetUserController#0" expanded="false" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2118,19 +2117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-          <folding>
-            <element signature="docComment;class#AddAndGetUserController#0" expanded="false" />
-            <element signature="method#setScore#0;class#AddAndGetUserController#0" expanded="false" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/JpaConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2151,9 +2137,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44041452">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68857145">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding>
+            <element signature="docComment;class#AddAndGetUserController#0" expanded="false" />
+            <element signature="method#login#0;class#AddAndGetUserController#0" expanded="false" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
