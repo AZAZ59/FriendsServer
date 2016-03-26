@@ -20,7 +20,7 @@ public class AddAndGetUserController {
     @Autowired
     private UserDataService dataService;
 
-    @RequestMapping("/login")
+    @RequestMapping("/user/login")
     public UserData login(
             @RequestParam(value = "email", defaultValue = "") String email,
             @RequestParam(value = "vk_id", defaultValue = "") Long vk_id
@@ -51,20 +51,24 @@ public class AddAndGetUserController {
         }
     }
 
-    @RequestMapping("/setScore")
-    public void setScore(
+    @RequestMapping("/user/setScore")
+    public UserData setScore(
             @RequestParam(value = "Id") String Id,
             @RequestParam(value = "score") long score
     ) {
         UserData data = dataService.findById(Id);
         data.setScore(score);
         dataService.persist(data);
+        return data;
     }
 
-    @RequestMapping("/all")
+
+
+    @RequestMapping("/user/all")
     public ArrayList<UserData> getAll() {
         return dataService.getAll();
     }
+
 
 }
 //return new Data(counter.incrementAndGet(),String.format(template, name));

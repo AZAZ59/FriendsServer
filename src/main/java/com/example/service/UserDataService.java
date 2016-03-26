@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public interface UserDataService {
 
-    public boolean persist(UserData data);
+    boolean persist(UserData data);
 
     UserData findByVk_id(Long Vk_id);
     UserData findByEmail(String Email);

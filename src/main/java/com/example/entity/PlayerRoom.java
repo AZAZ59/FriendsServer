@@ -17,13 +17,40 @@ public class PlayerRoom {
 
     @OneToMany
     List<UserData> users;
-
+    boolean open;
     //@OneToOne
     UserData creator;
-
+    Long startTime;
+    Long endTime;
 
     public PlayerRoom() {
         this.id=UUID.randomUUID().toString();
+        this.endTime=-1L;
+    }
+
+
+    public Long getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Long startTime) {
+        this.startTime = startTime;
+    }
+
+    public Long getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Long endTime) {
+        this.endTime = endTime;
+    }
+
+    public boolean isOpen() {
+        return open;
+    }
+
+    public void setOpen(boolean open) {
+        this.open = open;
     }
 
     public String getId() {
