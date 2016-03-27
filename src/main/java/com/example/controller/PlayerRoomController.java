@@ -90,6 +90,7 @@ public class PlayerRoomController {
         roomService.persist(playerRoom);
         return playerRoom;
     }
+
     @RequestMapping("/room/removeMember")
     public int removeMember(
             @RequestParam(value = "roomId") String roomId,
@@ -97,7 +98,7 @@ public class PlayerRoomController {
     ){
         PlayerRoom playerRoom=roomService.findById(roomId);
         UserData player=userService.findById(playerId);
-        ListIterator<String> dat =playerRoom.getUsers().listIterator();
+        ListIterator<String> dat =new ArrayList<String>(playerRoom.getUsers()).listIterator();
         while(dat.hasNext()){
             String  cur=dat.next();
             if(player.getId()==cur){

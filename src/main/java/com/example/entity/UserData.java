@@ -13,7 +13,6 @@ import java.util.UUID;
  * Created by azaz on 25/02/16.
  */
 @Entity
-@JsonIgnoreProperties(value = "room")
 public class UserData implements DomainObject {
     @Id
     private String id;
