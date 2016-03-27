@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface UserDataRepository extends CrudRepository<UserData,String> {
 
-    List<UserData> findByVkId(Long Vk_id);
+    List<UserData> findByVkId(String Vk_id);
     List<UserData> findByEmail(String Email);
 
 }

@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.xml.bind.annotation.XmlTransient;
 import java.util.UUID;
 
 /**
@@ -30,7 +29,7 @@ public class UserData implements DomainObject {
     @ManyToOne
     PlayerRoom room;
 
-    private Long vkId;
+    private String vkId;
     private String email;
     private String message;
     long score;
@@ -84,17 +83,7 @@ public class UserData implements DomainObject {
         this.score = score;
     }
 
-    public UserData(Long vkId) {
-        this();
-        this.vkId = vkId;
-    }
-
-    public UserData(String email) {
-        this();
-        this.email = email;
-    }
-
-    public UserData(Long vkId, String email) {
+    public UserData(String vkId, String email) {
         this();
         this.vkId = vkId;
         this.email = email;
@@ -108,11 +97,11 @@ public class UserData implements DomainObject {
         this.id = id;
     }
 
-    public Long getVkId() {
+    public String getVkId() {
         return vkId;
     }
 
-    public void setVkId(Long vkId) {
+    public void setVkId(String vkId) {
         this.vkId = vkId;
     }
 

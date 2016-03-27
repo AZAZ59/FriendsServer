@@ -8,7 +8,7 @@ public interface UserDataService {
 
     boolean persist(UserData data);
 
-    UserData findByVk_id(Long Vk_id);
+    UserData findByVk_id(String Vk_id);
     UserData findByEmail(String Email);
     UserData findById(String Id);
     ArrayList<UserData> getAll();

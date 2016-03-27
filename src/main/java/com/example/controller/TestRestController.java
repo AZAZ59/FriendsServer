@@ -26,12 +26,27 @@ public class TestRestController {
 
     @RequestMapping("/greeting")
     public Data greeting(@RequestParam(value = "data", defaultValue = "World") String name) {
-        PlayerRoom room1= new PlayerRoom();
+        PlayerRoomController room= new PlayerRoomController();
+        AddAndGetUserController user= new AddAndGetUserController();
+
+        UserData user1=user.login("user1@asd.ru","123");
+        UserData user2=user.login("user2@asd.ru","234");
+
+        PlayerRoom room1 = room.create(user1.getId(), true,"place1","room1");
+        room.addPlayer(room1.getId(),user2.getId());
+
+        room.create(user.login("user3@qwe.ru","345").getId(),true,"place2","room2");
+
+        /*PlayerRoom room1= new PlayerRoom();
         PlayerRoom room2= new PlayerRoom();
 
         UserData user1=new UserData();
         UserData user2=new UserData();
         UserData user3=new UserData();
+
+        user1.setEmail("user1@email.ru");
+        user2.setEmail("user2@email.ru");
+        user3.setEmail("user3@email.ru");
 
         userService.persist(user1);
         userService.persist(user2);
@@ -39,18 +54,13 @@ public class TestRestController {
         roomService.persist(room1);
         roomService.persist(room2);
 
-        user1.setEmail("user1@email.ru");
+
         user1.setRoom(room1);
-
-        user2.setEmail("user2@email.ru");
         user2.setRoom(room1);
-
-        user3.setEmail("user3@email.ru");
         user3.setRoom(room2);
 
         room1.setPlace("place1");
         room1.setOpen(true);
-        room1.setStartTime(System.currentTimeMillis());
         room1.setCreator(user1);
         room1.setName("room1");
         room1.getUsers().add(user1);
@@ -68,7 +78,7 @@ public class TestRestController {
         userService.persist(user3);
         roomService.persist(room1);
         roomService.persist(room2);
-
+*/
         return new Data(counter.incrementAndGet(),String.format(template, name));
     }
 }

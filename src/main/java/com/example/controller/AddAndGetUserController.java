@@ -23,7 +23,7 @@ public class AddAndGetUserController {
     @RequestMapping("/user/login")
     public UserData login(
             @RequestParam(value = "email", defaultValue = "") String email,
-            @RequestParam(value = "vk_id", defaultValue = "") Long vk_id
+            @RequestParam(value = "vk_id", defaultValue = "") String vk_id
     ) {
         if (email.isEmpty()) email = null;
         LOG.info("email |" + email + "| id " + vk_id);
