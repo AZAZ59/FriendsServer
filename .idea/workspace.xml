@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b159f6f1-0249-4c93-8076-5e1a263a6d06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+    <list default="true" id="b159f6f1-0249-4c93-8076-5e1a263a6d06" name="Default" comment="Deploy">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" />
     </list>
     <ignored path="untitled2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddAndGetUserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddAndGetUserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9028571">
+            <state vertical-scroll-proportion="0.0">
               <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
               <folding>
                 <element signature="docComment;class#AddAndGetUserController#0" expanded="false" />
@@ -79,6 +75,16 @@
                 <element signature="e#2300#2301#0" expanded="true" />
                 <element signature="e#2343#2344#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4775281">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,11 +172,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/service/RoomService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controller/TestRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/entity/UserData.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/service/RoomServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -1410,13 +1416,7 @@
       <workItem from="1456423318108" duration="748000" />
       <workItem from="1456424220242" duration="2599000" />
       <workItem from="1459013390605" duration="8142000" />
-      <workItem from="1459057833760" duration="17339000" />
-    </task>
-    <task id="LOCAL-00036" summary="Deploy">
-      <created>1456421383890</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1456421383890</updated>
+      <workItem from="1459057833760" duration="17438000" />
     </task>
     <task id="LOCAL-00037" summary="Deploy">
       <created>1456421889398</created>
@@ -1706,11 +1706,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459080395357</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Deploy">
+      <created>1459080858921</created>
+      <option name="number" value="00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1459080858921</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72749000" />
+    <option name="totallyTimeSpent" value="72848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1730,7 +1736,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32178217" sideWeight="0.49695587" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38235295" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38235295" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37254903" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="100" y="60" width="1166" height="578" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22390318" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41503268" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2171,14 +2177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/service/RoomService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2288,7 +2286,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9028571">
+        <state vertical-scroll-proportion="0.0">
           <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
           <folding>
             <element signature="docComment;class#AddAndGetUserController#0" expanded="false" />
@@ -2297,6 +2295,14 @@
             <element signature="e#2300#2301#0" expanded="true" />
             <element signature="e#2343#2344#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4775281">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
