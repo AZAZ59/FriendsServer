@@ -124,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerRoom.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayerRoom.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.20207255">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="docComment;class#PlayerRoom#0" expanded="false" />
                 <element signature="method#PlayerRoom#0;class#PlayerRoom#0" expanded="false" />
@@ -152,10 +152,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerRoomController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerRoomController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90625">
+            <state vertical-scroll-proportion="0.0">
               <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
               <folding>
                 <element signature="docComment;class#PlayerRoomController#0" expanded="false" />
@@ -240,8 +240,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controller/AddAndGetUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/entity/UserData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java" />
       </list>
     </option>
   </component>
@@ -1481,13 +1481,7 @@
       <workItem from="1456423318108" duration="748000" />
       <workItem from="1456424220242" duration="2599000" />
       <workItem from="1459013390605" duration="8142000" />
-      <workItem from="1459057833760" duration="22701000" />
-    </task>
-    <task id="LOCAL-00046" summary="Deploy">
-      <created>1456425457266</created>
-      <option name="number" value="00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1456425457266</updated>
+      <workItem from="1459057833760" duration="23136000" />
     </task>
     <task id="LOCAL-00047" summary="Deploy">
       <created>1456425752267</created>
@@ -1777,11 +1771,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459087375845</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Deploy">
+      <created>1459087914209</created>
+      <option name="number" value="00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1459087914209</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78111000" />
+    <option name="totallyTimeSpent" value="78546000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1801,7 +1801,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32178217" sideWeight="0.49695587" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38235295" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3267974" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
+      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32352942" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="100" y="60" width="1166" height="578" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22390318" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41503268" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2347,20 +2347,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding>
-            <element signature="docComment;class#PlayerRoom#0" expanded="false" />
-            <element signature="method#PlayerRoom#0;class#PlayerRoom#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90625">
+        <state vertical-scroll-proportion="0.0">
           <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#PlayerRoomController#0" expanded="false" />
@@ -2369,6 +2358,17 @@
             <element signature="method#addPlayer#1;class#PlayerRoomController#0" expanded="false" />
             <element signature="method#endGame#0;class#PlayerRoomController#0" expanded="false" />
             <element signature="method#removeMember#0;class#PlayerRoomController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20207255">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#PlayerRoom#0" expanded="false" />
+            <element signature="method#PlayerRoom#0;class#PlayerRoom#0" expanded="false" />
           </folding>
         </state>
       </provider>
