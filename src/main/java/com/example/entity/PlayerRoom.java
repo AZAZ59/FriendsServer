@@ -1,6 +1,10 @@
 package com.example.entity;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.*;
+import javax.persistence.Entity;
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
@@ -15,6 +19,7 @@ public class PlayerRoom implements DomainObject {
     @Id
     String id;
 
+    @Cascade(CascadeType.ALL)
     @OneToMany
     List<UserData> users;
     boolean open;

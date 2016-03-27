@@ -66,6 +66,12 @@ public class PlayerRoomController {
         roomService.persist(playerRoom);
         return playerRoom;
     }
+    @RequestMapping("/room/getById")
+    public PlayerRoom addPlayer(
+            @RequestParam(value = "roomId") String roomId){
+        return roomService.findById(roomId);
+    }
+
 
     @RequestMapping("/room/endGame")
     public PlayerRoom endGame(

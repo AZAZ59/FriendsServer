@@ -30,6 +30,7 @@ public class RoomServiceImpl implements RoomService {
     @Override
     public boolean persist(PlayerRoom room) {
         try {
+
             dataRepository.save(room);
             return true;
         } catch (Exception e) {
