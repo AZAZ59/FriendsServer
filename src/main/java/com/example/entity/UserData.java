@@ -1,5 +1,7 @@
 package com.example.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -10,6 +12,7 @@ import java.util.UUID;
  * Created by azaz on 25/02/16.
  */
 @Entity
+@JsonIgnoreProperties(value = "room")
 public class UserData implements DomainObject {
     @Id
     private String id;
@@ -24,7 +27,6 @@ public class UserData implements DomainObject {
                 '}';
     }
 
-    @XmlTransient
     @ManyToOne
     PlayerRoom room;
 
