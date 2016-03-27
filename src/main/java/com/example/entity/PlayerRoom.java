@@ -5,7 +5,10 @@ import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
-import java.util.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.UUID;
+import java.util.ArrayList;
 
 /**
  * Created by AZAZ on 26.03.2016.
@@ -17,7 +20,7 @@ public class PlayerRoom implements DomainObject {
     String id;
 
     @ElementCollection
-    HashSet<String> users;
+    List<String> users;
     boolean open;
     //@OneToOne
     String creator;
@@ -28,7 +31,7 @@ public class PlayerRoom implements DomainObject {
 
     public PlayerRoom() {
         this.id=UUID.randomUUID().toString();
-        users=new HashSet<>();
+        users=new ArrayList<>();
         this.endTime=-1L;
     }
 
@@ -80,11 +83,11 @@ public class PlayerRoom implements DomainObject {
         this.id = id;
     }
 
-    public HashSet<String> getUsers() {
+    public List<String> getUsers() {
         return users;
     }
 
-    public void setUsers(HashSet<String> users) {
+    public void setUsers(List<String> users) {
         this.users = users;
     }
 

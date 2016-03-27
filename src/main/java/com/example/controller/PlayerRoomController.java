@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.ListIterator;
+import java.util.stream.Collectors;
 
 /**
  * Created by azaz on 22/01/16.
@@ -98,7 +100,7 @@ public class PlayerRoomController {
     ){
         PlayerRoom playerRoom=roomService.findById(roomId);
         UserData player=userService.findById(playerId);
-        ListIterator<String> dat =new ArrayList<String>(playerRoom.getUsers()).listIterator();
+        ListIterator<String> dat =playerRoom.getUsers().stream().distinct().collect(Collectors.toList()).listIterator();
         while(dat.hasNext()){
             String  cur=dat.next();
             if(player.getId()==cur){
