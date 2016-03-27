@@ -8,7 +8,7 @@
       <default-schemas>postgres.pg_catalog postgres.public</default-schemas>
     </data-source>
     <data-source name="PostgreSQL - d1si3rdqdjo5nc?sslmode=require@ec2-54-197-224-155.compute-1.amazonaws.com" uuid="e268488f-e065-4d16-9f85-43f6f706feb0">
-      <secret-storage>master_key</secret-storage>
+      <secret-storage>memory</secret-storage>
       <user-name>ykidigbulptour</user-name>
       <schema-pattern>d1si3rdqdjo5nc.public</schema-pattern>
     </data-source>
