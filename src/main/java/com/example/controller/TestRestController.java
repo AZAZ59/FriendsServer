@@ -26,7 +26,17 @@ public class TestRestController {
 
     @RequestMapping("/greeting")
     public Data greeting(@RequestParam(value = "data", defaultValue = "World") String name) {
-        PlayerRoom room1= new PlayerRoom();
+        PlayerRoomController room= new PlayerRoomController();
+        AddAndGetUserController user= new AddAndGetUserController();
+
+        UserData user1=user.login("user1@asd.ru",123L);
+        UserData user2=user.login("user2@asd.ru",234L);
+
+        PlayerRoom room1 = room.create(user1.getId(), true,"place1","room1");
+        room.addPlayer(room1.getId(),user2.getId());
+        room.create(user.login("user3@qwe.ru",345L).getId(),true,"place2","room2");
+
+        /*        PlayerRoom room1= new PlayerRoom();
         PlayerRoom room2= new PlayerRoom();
 
         UserData user1=new UserData();
@@ -63,7 +73,7 @@ public class TestRestController {
 
         roomService.persist(room1);
         roomService.persist(room2);
-
+*/
         return new Data(counter.incrementAndGet(),String.format(template, name));
     }
 }
