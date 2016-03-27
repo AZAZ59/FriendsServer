@@ -46,6 +46,7 @@ public class TestRestController {
         room1.setOpen(true);
         room1.setStartTime(System.currentTimeMillis());
         room1.setCreator(user1);
+
         room1.getUsers().add(user1);
         room1.getUsers().add(user2);
 
