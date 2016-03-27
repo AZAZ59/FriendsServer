@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.example.entity.PlayerRoom;
+import com.example.entity.UserData;
 import com.example.service.RoomService;
 import com.example.service.UserDataService;
 import org.apache.log4j.Logger;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 /**
  * Created by azaz on 22/01/16.
@@ -58,6 +60,31 @@ public class PlayerRoomController {
         roomService.persist(playerRoom);
         return playerRoom;
     }
+    @RequestMapping("/room/removeMember")
+    public int removeMember(
+            @RequestParam(value = "roomId") String roomId,
+            @RequestParam(value = "playerId") String playerId
+    ){
+        PlayerRoom playerRoom=roomService.findById(roomId);
+        UserData player=userService.findById(playerId);
+        ListIterator<UserData> dat =playerRoom.getUsers().listIterator();
+        while(dat.hasNext()){
+            UserData cur=dat.next();
+            if(player.getId()==cur.getId()){
+                dat.previous();
+                dat.remove();
+            }
+        }
+        if(playerRoom.getUsers().size()==0){
+            roomService.delete(playerRoom.getId());
+            return 0;
+        }else {
+            //playerRoom.setEndTime(System.currentTimeMillis());
+            roomService.persist(playerRoom);
+            return playerRoom.getUsers().size();
+        }
+    }
+
 
 
 
