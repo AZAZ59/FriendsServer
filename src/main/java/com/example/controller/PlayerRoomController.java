@@ -32,7 +32,6 @@ public class PlayerRoomController {
             ,@RequestParam(value = "isOpen", defaultValue = "true", required = false) boolean isOpen
             ,@RequestParam(value = "place")String place
             ,@RequestParam(value = "name")String name
-
     )
     {
         PlayerRoom playerRoom = new PlayerRoom();

@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 @Entity
 
-public class PlayerRoom {
+public class PlayerRoom implements DomainObject {
     @Id
     String id;
 

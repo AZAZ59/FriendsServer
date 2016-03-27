@@ -27,7 +27,15 @@ public class TestRestController {
     @RequestMapping("/greeting")
     public Data greeting(@RequestParam(value = "data", defaultValue = "World") String name) {
 /*
-{"id":"4dedad9e-d1b9-469e-be0d-8567b58ea894","vkId":"","email":"user1@ya.ru","message":null,"score":0}
+{"id":"3e24a087-cf7e-4b9d-b540-ac16cd6a07aa","vkId":null,"email":"user1@ya.ru","message":null,"score":0}
+{"id":"6e8f9e89-01a5-4405-bdd7-70cec4fea660","vkId":null,"email":"user2@ya.ru","message":null,"score":0}
+{"id":"f3b744c5-544b-48aa-aa2b-969fe12cf2f3","vkId":null,"email":"user3@ya.ru","message":null,"score":0}
+
+
+d0cbab2e-c916-40da-a908-3693b5119eb8
+
+d75a6052-efc7-4eea-a5be-7a1c191dbfa6
+
 */
 /*
         PlayerRoomController room= new PlayerRoomController();
