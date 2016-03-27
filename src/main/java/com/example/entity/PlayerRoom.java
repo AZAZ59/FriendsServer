@@ -22,12 +22,20 @@ public class PlayerRoom {
     UserData creator;
     Long startTime;
     Long endTime;
+    String place;
 
     public PlayerRoom() {
         this.id=UUID.randomUUID().toString();
         this.endTime=-1L;
     }
 
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
 
     public Long getStartTime() {
         return startTime;

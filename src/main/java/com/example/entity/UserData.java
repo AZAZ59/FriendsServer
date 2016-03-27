@@ -3,6 +3,7 @@ package com.example.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.UUID;
 
 /**
@@ -23,6 +24,7 @@ public class UserData implements DomainObject {
                 '}';
     }
 
+    @XmlTransient
     @ManyToOne
     PlayerRoom room;
 

@@ -29,13 +29,26 @@ public class PlayerRoomController {
     @RequestMapping("/room/create")
     public PlayerRoom create(
             @RequestParam(value = "creatorId") String creatorId
-            ,@RequestParam(value = "isOpen", defaultValue = "true", required = false) boolean isOpen)
+            ,@RequestParam(value = "isOpen", defaultValue = "true", required = false) boolean isOpen
+            ,@RequestParam(value = "place")String place
+    )
     {
         PlayerRoom playerRoom = new PlayerRoom();
+        UserData creator = userService.findById(creatorId);
+
         playerRoom.setStartTime(System.currentTimeMillis());
-        playerRoom.setCreator(userService.findById(creatorId));
+
+        playerRoom.setCreator(creator);
+        playerRoom.getUsers().add(creator);
+        creator.setRoom(playerRoom);
+
         playerRoom.setOpen(isOpen);
+
+        playerRoom.setPlace(place);
+
+        userService.persist(creator);
         roomService.persist(playerRoom);
+
         return playerRoom;
     }
 
