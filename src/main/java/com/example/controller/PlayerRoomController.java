@@ -39,8 +39,8 @@ public class PlayerRoomController {
 
         playerRoom.setStartTime(System.currentTimeMillis());
 
-        playerRoom.setCreator(creator);
-        playerRoom.getUsers().add(creator);
+        playerRoom.setCreator(creator.getId());
+        playerRoom.getUsers().add(creator.getId());
         creator.setRoom(playerRoom);
 
         playerRoom.setOpen(isOpen);
@@ -62,7 +62,7 @@ public class PlayerRoomController {
     )
     {
         PlayerRoom playerRoom=roomService.findById(roomId);
-        playerRoom.getUsers().add(userService.findById(playerId));
+        playerRoom.getUsers().add(playerId);
         roomService.persist(playerRoom);
         return playerRoom;
     }
@@ -89,10 +89,10 @@ public class PlayerRoomController {
     ){
         PlayerRoom playerRoom=roomService.findById(roomId);
         UserData player=userService.findById(playerId);
-        ListIterator<UserData> dat =playerRoom.getUsers().listIterator();
+        ListIterator<String> dat =playerRoom.getUsers().listIterator();
         while(dat.hasNext()){
-            UserData cur=dat.next();
-            if(player.getId()==cur.getId()){
+            String  cur=dat.next();
+            if(player.getId()==cur){
                 dat.previous();
                 dat.remove();
             }

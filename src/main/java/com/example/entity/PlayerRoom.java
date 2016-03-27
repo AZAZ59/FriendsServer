@@ -19,12 +19,10 @@ public class PlayerRoom implements DomainObject {
     @Id
     String id;
 
-    @Cascade(CascadeType.ALL)
-    @OneToMany
-    List<UserData> users;
+    List<String> users;
     boolean open;
     //@OneToOne
-    UserData creator;
+    String creator;
     Long startTime;
     Long endTime;
     String place;
@@ -84,19 +82,19 @@ public class PlayerRoom implements DomainObject {
         this.id = id;
     }
 
-    public List<UserData> getUsers() {
+    public List<String> getUsers() {
         return users;
     }
 
-    public void setUsers(List<UserData> users) {
+    public void setUsers(List<String> users) {
         this.users = users;
     }
 
-    public UserData getCreator() {
+    public String  getCreator() {
         return creator;
     }
 
-    public void setCreator(UserData creator) {
+    public void setCreator(String creator) {
         this.creator = creator;
     }
 }

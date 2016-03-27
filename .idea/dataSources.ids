@@ -55,24 +55,24 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>21233163</introspection-state-number>
-        <introspection-timestamp>2016-03-27.13:37:49.192</introspection-timestamp>
+        <introspection-state-number>21252849</introspection-state-number>
+        <introspection-timestamp>2016-03-27.16:11:31.943</introspection-timestamp>
       </schema>
       <sequence id="3" parent="2" name="hibernate_sequence">
-        <object-id>14133825</object-id>
-        <state-number>21217140</state-number>
+        <object-id>14137716</object-id>
+        <state-number>21252849</state-number>
       </sequence>
       <table id="4" parent="2" name="data">
-        <object-id>14133781</object-id>
-        <state-number>21217132</state-number>
+        <object-id>14137672</object-id>
+        <state-number>21252841</state-number>
       </table>
       <table id="5" parent="2" name="playerroom">
-        <object-id>14133786</object-id>
-        <state-number>21233163</state-number>
+        <object-id>14137677</object-id>
+        <state-number>21252848</state-number>
       </table>
       <table id="6" parent="2" name="playerroom_userdata">
-        <object-id>14133794</object-id>
-        <state-number>21217138</state-number>
+        <object-id>14137685</object-id>
+        <state-number>21252847</state-number>
       </table>
       <table id="7" parent="2" name="room">
         <object-id>11579057</object-id>
@@ -83,24 +83,24 @@
         <state-number>14346245</state-number>
       </table>
       <table id="9" parent="2" name="userdata">
-        <object-id>14133800</object-id>
-        <state-number>21217139</state-number>
+        <object-id>14137691</object-id>
+        <state-number>21252848</state-number>
       </table>
       <table id="10" parent="2" name="userstatus">
         <object-id>11579068</object-id>
         <state-number>14346447</state-number>
       </table>
       <column id="11" parent="4" name="id">
-        <state-number>21217132</state-number>
+        <state-number>21252841</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
       <column id="12" parent="4" name="content">
-        <state-number>21217132</state-number>
+        <state-number>21252841</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <index id="13" parent="4" name="data_pkey">
-        <object-id>14133784</object-id>
+        <object-id>14137675</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -111,210 +111,214 @@
         <primary>1</primary>
       </key>
       <column id="15" parent="5" name="id">
-        <state-number>21217133</state-number>
+        <state-number>21252842</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="16" parent="5" name="creator">
-        <state-number>21217133</state-number>
+        <state-number>21252842</state-number>
         <data-type>bytea</data-type>
       </column>
       <column id="17" parent="5" name="endtime">
-        <state-number>21217133</state-number>
+        <state-number>21252842</state-number>
         <data-type>bigint</data-type>
       </column>
-      <column id="18" parent="5" name="open">
-        <state-number>21217133</state-number>
+      <column id="18" parent="5" name="name">
+        <state-number>21252842</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="19" parent="5" name="open">
+        <state-number>21252842</state-number>
         <mandatory>1</mandatory>
         <data-type>boolean</data-type>
       </column>
-      <column id="19" parent="5" name="starttime">
-        <state-number>21217133</state-number>
-        <data-type>bigint</data-type>
-      </column>
       <column id="20" parent="5" name="place">
-        <state-number>21233163</state-number>
+        <state-number>21252842</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <index id="21" parent="5" name="playerroom_pkey">
-        <object-id>14133792</object-id>
+      <column id="21" parent="5" name="starttime">
+        <state-number>21252842</state-number>
+        <data-type>bigint</data-type>
+      </column>
+      <index id="22" parent="5" name="playerroom_pkey">
+        <object-id>14137683</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="22" parent="5" name="playerroom_pkey">
+      <key id="23" parent="5" name="playerroom_pkey">
         <columns>id</columns>
         <underlying-index>playerroom_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="23" parent="6" name="playerroom_id">
-        <state-number>21217134</state-number>
+      <column id="24" parent="6" name="playerroom_id">
+        <state-number>21252843</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="24" parent="6" name="users_id">
-        <state-number>21217134</state-number>
+      <column id="25" parent="6" name="users_id">
+        <state-number>21252843</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <index id="25" parent="6" name="uk_7ngi4bf3atqevsnm3gd6g5iuy">
-        <object-id>14133808</object-id>
+      <index id="26" parent="6" name="uk_7ngi4bf3atqevsnm3gd6g5iuy">
+        <object-id>14137699</object-id>
         <columns>users_id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="26" parent="6" name="uk_7ngi4bf3atqevsnm3gd6g5iuy">
+      <key id="27" parent="6" name="uk_7ngi4bf3atqevsnm3gd6g5iuy">
         <columns>users_id</columns>
         <underlying-index>uk_7ngi4bf3atqevsnm3gd6g5iuy</underlying-index>
       </key>
-      <foreign-key id="27" parent="6" name="fk_qyrvrvb0tfn5rfuqdi6tjg6cm">
+      <foreign-key id="28" parent="6" name="fk_qyrvrvb0tfn5rfuqdi6tjg6cm">
         <columns>playerroom_id</columns>
         <ref-key>~.playerroom.playerroom_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="28" parent="6" name="fk_7ngi4bf3atqevsnm3gd6g5iuy">
+      <foreign-key id="29" parent="6" name="fk_7ngi4bf3atqevsnm3gd6g5iuy">
         <columns>users_id</columns>
         <ref-key>~.userdata.userdata_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="29" parent="7" name="id">
+      <column id="30" parent="7" name="id">
         <state-number>14346238</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
-      <column id="30" parent="7" name="name">
+      <column id="31" parent="7" name="name">
         <state-number>14346238</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="31" parent="7" name="master_id">
+      <column id="32" parent="7" name="master_id">
         <state-number>14346238</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <index id="32" parent="7" name="room_pkey">
+      <index id="33" parent="7" name="room_pkey">
         <object-id>11579063</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="33" parent="7" name="room_pkey">
+      <key id="34" parent="7" name="room_pkey">
         <columns>id</columns>
         <underlying-index>room_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="34" parent="8" name="room_id">
+      <column id="35" parent="8" name="room_id">
         <state-number>14346239</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
-      <column id="35" parent="8" name="users_id">
+      <column id="36" parent="8" name="users_id">
         <state-number>14346239</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
-      <index id="36" parent="8" name="uk_2vjcalj4jgbwho86gvagsff6h">
+      <index id="37" parent="8" name="uk_2vjcalj4jgbwho86gvagsff6h">
         <object-id>11579076</object-id>
         <columns>users_id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="37" parent="8" name="uk_2vjcalj4jgbwho86gvagsff6h">
+      <key id="38" parent="8" name="uk_2vjcalj4jgbwho86gvagsff6h">
         <columns>users_id</columns>
         <underlying-index>uk_2vjcalj4jgbwho86gvagsff6h</underlying-index>
       </key>
-      <foreign-key id="38" parent="8" name="fk_59xg8figx1xkjisr80g71crxo">
+      <foreign-key id="39" parent="8" name="fk_59xg8figx1xkjisr80g71crxo">
         <columns>room_id</columns>
         <ref-key>~.room.room_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="39" parent="8" name="fk_2vjcalj4jgbwho86gvagsff6h">
+      <foreign-key id="40" parent="8" name="fk_2vjcalj4jgbwho86gvagsff6h">
         <columns>users_id</columns>
         <ref-key>~.userstatus.userstatus_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="40" parent="9" name="id">
-        <state-number>21217135</state-number>
+      <column id="41" parent="9" name="id">
+        <state-number>21252844</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="41" parent="9" name="email">
-        <state-number>21217135</state-number>
+      <column id="42" parent="9" name="email">
+        <state-number>21252844</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="42" parent="9" name="message">
-        <state-number>21217135</state-number>
+      <column id="43" parent="9" name="message">
+        <state-number>21252844</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="43" parent="9" name="score">
-        <state-number>21217135</state-number>
+      <column id="44" parent="9" name="score">
+        <state-number>21252844</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
-      <column id="44" parent="9" name="vkid">
-        <state-number>21217135</state-number>
-        <data-type>bigint</data-type>
-      </column>
-      <column id="45" parent="9" name="room_id">
-        <state-number>21217135</state-number>
+      <column id="45" parent="9" name="vkid">
+        <state-number>21252844</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <index id="46" parent="9" name="userdata_pkey">
-        <object-id>14133806</object-id>
+      <column id="46" parent="9" name="room_id">
+        <state-number>21252844</state-number>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <index id="47" parent="9" name="userdata_pkey">
+        <object-id>14137697</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="47" parent="9" name="userdata_pkey">
+      <key id="48" parent="9" name="userdata_pkey">
         <columns>id</columns>
         <underlying-index>userdata_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <foreign-key id="48" parent="9" name="fk_qjgulhbqsuacnnxypc89a4rpd">
+      <foreign-key id="49" parent="9" name="fk_qjgulhbqsuacnnxypc89a4rpd">
         <columns>room_id</columns>
         <ref-key>~.playerroom.playerroom_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="49" parent="10" name="id">
+      <column id="50" parent="10" name="id">
         <state-number>14346240</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
-      <column id="50" parent="10" name="lastgame">
+      <column id="51" parent="10" name="lastgame">
         <state-number>14346240</state-number>
         <data-type>bytea</data-type>
       </column>
-      <column id="51" parent="10" name="lastroom">
+      <column id="52" parent="10" name="lastroom">
         <state-number>14346240</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="52" parent="10" name="totalscore">
+      <column id="53" parent="10" name="totalscore">
         <state-number>14346240</state-number>
         <data-type>bigint</data-type>
       </column>
-      <column id="53" parent="10" name="userdata_id">
+      <column id="54" parent="10" name="userdata_id">
         <state-number>14346240</state-number>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="54" parent="10" name="lastroom_id">
+      <column id="55" parent="10" name="lastroom_id">
         <state-number>14346446</state-number>
         <data-type>bigint</data-type>
       </column>
-      <index id="55" parent="10" name="userstatus_pkey">
+      <index id="56" parent="10" name="userstatus_pkey">
         <object-id>11579074</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="56" parent="10" name="userstatus_pkey">
+      <key id="57" parent="10" name="userstatus_pkey">
         <columns>id</columns>
         <underlying-index>userstatus_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <foreign-key id="57" parent="10" name="fk_bo1703rnffl9sf3afee3eci0b">
+      <foreign-key id="58" parent="10" name="fk_bo1703rnffl9sf3afee3eci0b">
         <columns>lastroom_id</columns>
         <ref-key>~.room.room_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>

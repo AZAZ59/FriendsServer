@@ -63,6 +63,12 @@ public class AddAndGetUserController {
         return data;
     }
 
+    @RequestMapping("/user/getById")
+    public UserData setScore(
+            @RequestParam(value = "Id") String Id){
+        return dataService.findById(Id);
+    }
+
 
 
     @RequestMapping("/user/all")
