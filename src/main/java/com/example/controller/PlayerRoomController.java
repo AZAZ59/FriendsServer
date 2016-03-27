@@ -88,7 +88,7 @@ public class PlayerRoomController {
 
 
 
-    @RequestMapping("/room//all")
+    @RequestMapping("/room/all")
     public ArrayList<PlayerRoom> getAll() {
         return roomService.getAll();
     }
