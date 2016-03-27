@@ -41,7 +41,7 @@ public class PlayerRoomController {
 
         playerRoom.setCreator(creator.getId());
         playerRoom.getUsers().add(creator.getId());
-        creator.setRoom(playerRoom);
+        creator.setRoom(playerRoom.getId());
 
         playerRoom.setOpen(isOpen);
 

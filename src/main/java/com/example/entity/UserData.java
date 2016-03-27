@@ -18,6 +18,8 @@ public class UserData implements DomainObject {
     @Id
     private String id;
 
+    private String room;
+
     @Override
     public String toString() {
         return "UserData{" +
@@ -28,23 +30,19 @@ public class UserData implements DomainObject {
                 '}';
     }
 
-    @Cascade(CascadeType.ALL)
-    @ManyToOne
-    PlayerRoom room;
-
     private String vkId;
     private String email;
     private String message;
     long score;
 
-    public PlayerRoom getRoom() {
+/*    public PlayerRoom getRoom() {
         return room;
     }
 
     public void setRoom(PlayerRoom room) {
         this.room = room;
     }
-
+*/
     public String getMessage() {
         return message;
     }
@@ -114,5 +112,13 @@ public class UserData implements DomainObject {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public String getRoom() {
+        return room;
     }
 }
