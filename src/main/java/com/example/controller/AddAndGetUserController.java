@@ -26,7 +26,7 @@ public class AddAndGetUserController {
             @RequestParam(value = "vk_id", defaultValue = "") String vk_id
     ) {
         if (email.isEmpty()) email = null;
-        if (vk_id.isEmpty()) email = null;
+        if (vk_id.isEmpty()) vk_id = null;
         LOG.info("email |" + email + "| id " + vk_id);
         UserData data = new UserData(vk_id, email);
         UserData fromEmail = null;
