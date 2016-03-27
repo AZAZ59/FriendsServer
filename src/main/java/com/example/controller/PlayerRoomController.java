@@ -37,8 +37,6 @@ public class PlayerRoomController {
         PlayerRoom playerRoom = new PlayerRoom();
         UserData creator = userService.findById(creatorId);
 
-        playerRoom.setStartTime(System.currentTimeMillis());
-
         playerRoom.setCreator(creator.getId());
         playerRoom.getUsers().add(creator.getId());
         creator.setRoom(playerRoom.getId());
@@ -55,6 +53,15 @@ public class PlayerRoomController {
         return playerRoom;
     }
 
+    @RequestMapping("/room/start")
+    public PlayerRoom setStartTime(@RequestParam(value = "roomId") String roomId                                   )
+    {
+        PlayerRoom room=roomService.findById(roomId);
+        room.setStartTime(System.currentTimeMillis());
+        roomService.persist(room);
+        return room;
+    }
+
     @RequestMapping("/room/addPlayer")
     public PlayerRoom addPlayer(
             @RequestParam(value = "roomId") String roomId,
@@ -66,6 +73,7 @@ public class PlayerRoomController {
         roomService.persist(playerRoom);
         return playerRoom;
     }
+
     @RequestMapping("/room/getById")
     public PlayerRoom addPlayer(
             @RequestParam(value = "roomId") String roomId){
