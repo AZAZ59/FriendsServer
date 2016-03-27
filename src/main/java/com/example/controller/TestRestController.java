@@ -22,12 +22,12 @@ public class TestRestController {
         PlayerRoomController room= new PlayerRoomController();
         AddAndGetUserController user= new AddAndGetUserController();
 
-        UserData user1=user.login("user1@asd.ru",null);
-        UserData user2=user.login("user2@asd.ru",null);
+        UserData user1=user.login("user1@asd.ru",123L);
+        UserData user2=user.login("user2@asd.ru",234L);
 
         PlayerRoom room1 = room.create(user1.getId(), true,"place1");
         room.addPlayer(room1.getId(),user2.getId());
-        room.create(user.login("user3@qwe.ru",null).getId(),true,"place2");
+        room.create(user.login("user3@qwe.ru",345L).getId(),true,"place2");
 
         return new Data(counter.incrementAndGet(),String.format(template, name));
     }
