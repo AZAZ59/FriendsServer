@@ -16,7 +16,7 @@ public class PlayerRoom {
     String id;
 
     @OneToMany
-    List<UserData> users=new ArrayList<>();
+    List<UserData> users;
     boolean open;
     //@OneToOne
     UserData creator;
@@ -27,6 +27,7 @@ public class PlayerRoom {
 
     public PlayerRoom() {
         this.id=UUID.randomUUID().toString();
+        users=new ArrayList<>();
         this.endTime=-1L;
     }
 
