@@ -130,11 +130,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="docComment;class#PlayerRoom#0" expanded="false" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="method#PlayerRoom#0;class#PlayerRoom#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -158,12 +157,15 @@
       <file leaf-file-name="PlayerRoomController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8210526">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.91099477">
+              <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
               <folding>
                 <element signature="docComment;class#PlayerRoomController#0" expanded="false" />
-                <element signature="method#create#0;class#PlayerRoomController#0" expanded="false" />
+                <element signature="method#setStartTime#0;class#PlayerRoomController#0" expanded="false" />
+                <element signature="method#addPlayer#0;class#PlayerRoomController#0" expanded="false" />
                 <element signature="method#addPlayer#1;class#PlayerRoomController#0" expanded="false" />
+                <element signature="method#endGame#0;class#PlayerRoomController#0" expanded="false" />
+                <element signature="method#removeMember#0;class#PlayerRoomController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1481,13 +1483,7 @@
       <workItem from="1456423318108" duration="748000" />
       <workItem from="1456424220242" duration="2599000" />
       <workItem from="1459013390605" duration="8142000" />
-      <workItem from="1459057833760" duration="21603000" />
-    </task>
-    <task id="LOCAL-00044" summary="Deploy">
-      <created>1456424748040</created>
-      <option name="number" value="00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1456424748040</updated>
+      <workItem from="1459057833760" duration="22391000" />
     </task>
     <task id="LOCAL-00045" summary="Deploy">
       <created>1456425145853</created>
@@ -1777,11 +1773,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459086381629</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Deploy">
+      <created>1459086586143</created>
+      <option name="number" value="00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1459086586143</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77013000" />
+    <option name="totallyTimeSpent" value="77801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1801,7 +1803,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32178217" sideWeight="0.49695587" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38235295" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33006537" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" x="40" y="178" width="1314" height="439" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="100" y="60" width="1166" height="578" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22390318" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41503268" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2317,18 +2319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#PlayerRoom#0" expanded="false" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2359,14 +2349,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/entity/PlayerRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;class#PlayerRoom#0" expanded="false" />
+            <element signature="method#PlayerRoom#0;class#PlayerRoom#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/PlayerRoomController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8210526">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.91099477">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#PlayerRoomController#0" expanded="false" />
-            <element signature="method#create#0;class#PlayerRoomController#0" expanded="false" />
+            <element signature="method#setStartTime#0;class#PlayerRoomController#0" expanded="false" />
+            <element signature="method#addPlayer#0;class#PlayerRoomController#0" expanded="false" />
             <element signature="method#addPlayer#1;class#PlayerRoomController#0" expanded="false" />
+            <element signature="method#endGame#0;class#PlayerRoomController#0" expanded="false" />
+            <element signature="method#removeMember#0;class#PlayerRoomController#0" expanded="false" />
           </folding>
         </state>
       </provider>

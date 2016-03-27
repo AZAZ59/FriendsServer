@@ -49,6 +49,9 @@ public class PlayerRoomController {
 
         playerRoom.setName(name);
 
+        playerRoom.setGameStarted(false);
+        playerRoom.setGameFinished(false);
+
         userService.persist(creator);
         roomService.persist(playerRoom);
 
@@ -60,7 +63,9 @@ public class PlayerRoomController {
     {
         PlayerRoom room=roomService.findById(roomId);
         room.setStartTime(System.currentTimeMillis());
+        room.setGameStarted(true);
         roomService.persist(room);
+
         return room;
     }
 
@@ -89,7 +94,9 @@ public class PlayerRoomController {
     ){
         PlayerRoom playerRoom=roomService.findById(roomId);
         playerRoom.setEndTime(System.currentTimeMillis());
+        playerRoom.setGameFinished(true);
         roomService.persist(playerRoom);
+
         return playerRoom;
     }
 

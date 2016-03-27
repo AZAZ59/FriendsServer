@@ -28,11 +28,29 @@ public class PlayerRoom implements DomainObject {
     Long endTime;
     String place;
     String name;
+    boolean isGameStarted;
+    boolean isGameFinished;
 
     public PlayerRoom() {
         this.id=UUID.randomUUID().toString();
         users=new ArrayList<>();
         this.endTime=-1L;
+    }
+
+    public boolean isGameStarted() {
+        return isGameStarted;
+    }
+
+    public void setGameStarted(boolean gameStarted) {
+        isGameStarted = gameStarted;
+    }
+
+    public boolean isGameFinished() {
+        return isGameFinished;
+    }
+
+    public void setGameFinished(boolean gameFinished) {
+        isGameFinished = gameFinished;
     }
 
     public String getName() {
