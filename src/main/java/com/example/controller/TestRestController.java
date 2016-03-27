@@ -28,8 +28,12 @@ public class TestRestController {
     public Data greeting(@RequestParam(value = "data", defaultValue = "World") String name) {
         PlayerRoomController room= new PlayerRoomController();
         AddAndGetUserController user= new AddAndGetUserController();
+/*
+ {"id":"49ad0405-b115-4dc2-86a9-3d873398e131","vkId":"","email":"asd@ya.ru","message":null,"score":0}
+ {"id":"49ad0405-b115-4dc2-86a9-3d873398e131","vkId":"","email":"asd@ya.ru","message":null,"score":0}
 
-        UserData user1=user.login("user1@asd.ru","123");
+*/
+/*        UserData user1=user.login("user1@asd.ru","123");
         UserData user2=user.login("user2@asd.ru","234");
 
         PlayerRoom room1 = room.create(user1.getId(), true,"place1","room1");
