@@ -33,6 +33,12 @@ public class TestRestController {
         UserData user2=new UserData();
         UserData user3=new UserData();
 
+        userService.persist(user1);
+        userService.persist(user2);
+        userService.persist(user3);
+        roomService.persist(room1);
+        roomService.persist(room2);
+
         user1.setEmail("user1@email.ru");
         user1.setRoom(room1);
 
@@ -60,7 +66,6 @@ public class TestRestController {
         userService.persist(user1);
         userService.persist(user2);
         userService.persist(user3);
-
         roomService.persist(room1);
         roomService.persist(room2);
 
