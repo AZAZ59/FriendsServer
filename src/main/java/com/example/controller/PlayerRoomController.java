@@ -31,6 +31,8 @@ public class PlayerRoomController {
             @RequestParam(value = "creatorId") String creatorId
             ,@RequestParam(value = "isOpen", defaultValue = "true", required = false) boolean isOpen
             ,@RequestParam(value = "place")String place
+            ,@RequestParam(value = "name")String name
+
     )
     {
         PlayerRoom playerRoom = new PlayerRoom();
@@ -45,6 +47,8 @@ public class PlayerRoomController {
         playerRoom.setOpen(isOpen);
 
         playerRoom.setPlace(place);
+
+        playerRoom.setName(name);
 
         userService.persist(creator);
         roomService.persist(playerRoom);

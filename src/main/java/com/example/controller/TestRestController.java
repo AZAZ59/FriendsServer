@@ -46,15 +46,16 @@ public class TestRestController {
         room1.setOpen(true);
         room1.setStartTime(System.currentTimeMillis());
         room1.setCreator(user1);
-
+        room1.setName("room1");
         room1.getUsers().add(user1);
         room1.getUsers().add(user2);
 
-        room1.setPlace("place2");
-        room1.setOpen(true);
-        room1.setStartTime(System.currentTimeMillis()+123456789L);
-        room1.setCreator(user3);
-        room1.getUsers().add(user3);
+        room2.setPlace("place2");
+        room2.setOpen(true);
+        room2.setStartTime(System.currentTimeMillis()+123456789L);
+        room2.setCreator(user3);
+        room2.getUsers().add(user3);
+        room2.setName("room2");
 
         userService.persist(user1);
         userService.persist(user2);

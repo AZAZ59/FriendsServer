@@ -16,17 +16,26 @@ public class PlayerRoom {
     String id;
 
     @OneToMany
-    List<UserData> users;
+    List<UserData> users=new ArrayList<>();
     boolean open;
     //@OneToOne
     UserData creator;
     Long startTime;
     Long endTime;
     String place;
+    String name;
 
     public PlayerRoom() {
         this.id=UUID.randomUUID().toString();
         this.endTime=-1L;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPlace() {
