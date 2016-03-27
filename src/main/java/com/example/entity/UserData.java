@@ -1,6 +1,8 @@
 package com.example.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -26,6 +28,7 @@ public class UserData implements DomainObject {
                 '}';
     }
 
+    @Cascade(CascadeType.ALL)
     @ManyToOne
     PlayerRoom room;
 
