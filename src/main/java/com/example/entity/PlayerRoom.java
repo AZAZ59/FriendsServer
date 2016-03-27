@@ -19,7 +19,7 @@ public class PlayerRoom implements DomainObject {
     @Id
     String id;
 
-    @OneToMany
+    @ElementCollection
     List<String> users;
     boolean open;
     //@OneToOne
